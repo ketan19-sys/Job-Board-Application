@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Board UI</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 40px;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        color: white;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+    }
+
+    .navbar button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 20px;
+        background: white;
+        color: #764ba2;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+        color: white;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .search-bar {
+        margin-top: 20px;
+    }
+
+    .search-bar input {
+        padding: 12px;
+        width: 250px;
+        border-radius: 25px;
+        border: none;
+        margin-right: 10px;
+    }
+
+    .search-bar button {
+        padding: 12px 20px;
+        border-radius: 25px;
+        border: none;
+        background: #ff7a18;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* JOB LIST */
+    .jobs {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .job-card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .job-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .job-card h3 {
+        color: #764ba2;
+        margin-bottom: 10px;
+    }
+
+    .job-card p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .job-card .tag {
+        display: inline-block;
+        background: #eee;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .apply-btn {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #ff7a18, #ffb347);
+        color: white;
+        cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h1>JobFinder</h1>
+    <button>Login</button>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Find Your Dream Job 🚀</h2>
+    <p>Browse thousands of job listings from top companies</p>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search jobs...">
+        <button>Search</button>
+    </div>
+</div>
+
+<!-- JOB LIST -->
+<div class="jobs">
+
+    <div class="job-card">
+        <h3>MERN Stack Developer</h3>
+        <p>Company: Tech Solutions</p>
+        <p>Location: Mumbai</p>
+        <span class="tag">Full-time</span>
+        <span class="tag">Remote</span>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+        <h3>Frontend Developer</h3>
+        <p>Company: Creative Studio</p>
+        <p>Location: Pune</p>
+        <span class="tag">Internship</span>
+        <span class="tag">On-site</span>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+        <h3>Backend Developer</h3>
+        <p>Company: CloudX</p>
+        <p>Location: Bangalore</p>
+        <span class="tag">Full-time</span>
+        <span class="tag">Hybrid</span>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 JobFinder | Built with ❤️
+</footer>
+
+</body>
+</html>

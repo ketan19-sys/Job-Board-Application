@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #764ba2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #ff7a18;
+    color: white;
+    cursor: pointer;
+}
+
+/* JOB LIST */
+.jobs {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card h3 {
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.job-card .tag {
+    display: inline-block;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.apply-btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+}
